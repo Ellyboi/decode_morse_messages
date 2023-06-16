@@ -52,13 +52,11 @@ def decode_char(letter)
     'Y'
   when '--..'
     'Z'
-  else
-    nil
   end
 end
 
-def decode_word(code) 
-  code.split(' ').map { |char| decode_char(char) }.join
+def decode_word(code)
+  code.split.map { |char| decode_char(char) }.join
 end
 
 def decode_message(code)
