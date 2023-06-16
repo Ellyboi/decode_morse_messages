@@ -64,3 +64,5 @@ end
 def decode_message(code)
   code.split('   ').map { |word| decode_word(word) }.join(' ')
 end
+
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...', morse_characters)
